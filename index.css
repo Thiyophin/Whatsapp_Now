@@ -1,0 +1,16 @@
+body{
+  background-image: url(./Images/bg.jpg);
+}
+
+.main{
+width: 100%;
+height: auto;
+}
+
+img{
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
