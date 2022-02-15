@@ -14,7 +14,7 @@
     A simple redirecting website to Whatsapp clients, Without saving their phone 📞 numbers. <br>
     You can WhatsApp to your number itself to save 📔 important messages in Whatsapp.
     </div>
-    <div class="container vh-90 d-flex justify-content-center align-items-center">
+    <div class="container mt-5 vh-90 d-flex justify-content-center align-items-center">
       <div class="card py-4 px-4">
         <form id="myForm">
           <div class="text-center mt-3 "><strong> <span class="info-text">Please Enter  Mobile Number To Whatsapp</span></strong> </div>
@@ -27,19 +27,4 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </body>
-<script>
-   document.querySelector('#myForm').addEventListener('submit', function() {
-  event.preventDefault()
-  let number=this.elements.phoneNum.value;
-  // console.log(number);
-  // console.log(typeof(number));
-  // console.log(number.length);
-  if(number.length!==10){
-    alert("Enter A Valid 10 Digit Number !");
-    location.reload();
-    return;
-  }
-  window.location.replace("https://wa.me/91"+number);
-});
-</script>
 </html>
