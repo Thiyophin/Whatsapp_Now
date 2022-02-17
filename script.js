@@ -2,7 +2,6 @@ document.querySelector('#myForm').addEventListener('submit', function(e) {
   e.preventDefault()
   let number=this.elements.phoneNum.value;
   if(number.length!==10){
-    // alert("Enter A Valid 10 Digit Number !!");
     Swal.fire({
       title: 'Not A Valid Number',
       text: "Enter a valid 10 digit number !",
